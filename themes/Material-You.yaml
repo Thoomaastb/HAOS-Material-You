@@ -33,7 +33,7 @@ Material You:
     # Definition für den hellen Modus
     light:
       # Hintergründe
-      primary-background-color: "#F8FAFC"       # Sehr helles, fast weißes Grau
+      primary-background-color: &primary_background "#F8FAFC"       # Sehr helles, fast weißes Grau
       secondary-background-color: "#FFFFFF"     # Reines Weiß für Dialoge
       card-background-color: "#FFFFFF"          # Reines Weiß für Karten
 
@@ -53,11 +53,12 @@ Material You:
       divider-color: "#E2E8F0"                  # Sehr helle Trennlinie
 
       header-background-color: "rgba(248, 250, 252, 0.9)"
+      sidebar-background-color: *primary_background
       
     # Definition für den dunklen Modus
     dark:
       # Hintergründe
-      primary-background-color: "#0F172A"       # Sehr dunkles Marineblau (fast schwarz)
+      primary-background-color: &primary_background "#0F172A"       # Sehr dunkles Marineblau (fast schwarz)
       secondary-background-color: "#1E293B"     # Dunkles Schiefergrau für Dialoge
       card-background-color: "#1E293B"          # Dunkles Schiefergrau für Karten
 
@@ -76,4 +77,5 @@ Material You:
       meine-tertiaere-farbe: *tertiary_color
       divider-color: "#334155"                 # Dunkle, subtile Trennlinie
 
-      #app-header-background-color: "rgba(15, 23, 42, 0.85)"
+      app-header-background-color: "rgba(15, 23, 42, 0.85)"
+      sidebar-background-color: *primary_background
