@@ -11,14 +11,7 @@ Material You:
   ha-card-border-radius: "16px"
   ha-card-border-width: "0"
 
-  app-header-backdrop-filter: "12px"
-
-  # mein-standard-transition: "all 0.25s ease-in-out"
-  # card-mod-theme: Material You 
-  # card-mod-root: |
-  #   ha-card {
-  #     transition: var(--mein-global-transition) !important;
-  #   }
+  app-header-backdrop-filter: "blur(12px) saturate(180%)"
 
   card-mod-root: |
     header {
@@ -43,10 +36,7 @@ Material You:
       primary-text-color: "#1E293B"            # Dunkles Schiefergrau für besten Kontrast
       secondary-text-color: "#64748B"          # Helleres Grau für Untertitel
       text-primary-color: "#FFFFFF"             # Weißer Text auf primärfarbigem Hintergrund (Header)
-
-      ha-tab-active-text-color: "#1E293B" 
-
-
+      
       # Zustände & Icons
       state-icon-color: "#475569"              # Neutrales Icon-Grau
       state-icon-active-color: *accent_color    # Aktive Icons leuchten im Akzent-Gelb
@@ -57,7 +47,7 @@ Material You:
       meine-tertiaere-farbe: *tertiary_color
       divider-color: "#E2E8F0"                  # Sehr helle Trennlinie
 
-      app-header-background-color: "rgba(248, 250, 252, 0.9)"
+      #app-header-background-color: "rgba(248, 250, 252, 0.9)"
       
     # Definition für den dunklen Modus
     dark:
@@ -81,4 +71,4 @@ Material You:
       meine-tertiaere-farbe: *tertiary_color
       divider-color: "#334155"                 # Dunkle, subtile Trennlinie
 
-      app-header-background-color: "rgba(15, 23, 42, 0.85)"
+      #app-header-background-color: "rgba(15, 23, 42, 0.85)"
