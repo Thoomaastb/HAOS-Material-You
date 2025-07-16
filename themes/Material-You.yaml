@@ -6,7 +6,7 @@ Material You:
   # ===================================================================
   ha-card-border-radius: "15px"
   ha-card-border-width: "0"
-  accent-color: "#ff9800" # Eine Akzentfarbe, die in beiden Modi gut aussieht
+  accent-color: "#FE7743" # Eine Akzentfarbe, die in beiden Modi gut aussieht
 
 
   global-transition: "all 0.4s ease-in-out"
@@ -26,8 +26,9 @@ Material You:
       # =================================================================================
       # HAUPTFARBEN (Die wichtigsten Variablen)
       # =================================================================================
-      primary-color: "#03A9F4"  # Hauptfarbe für Header, aktive Icons und Akzente
-      accent-color: "#FF9800"   # Akzentfarbe, oft für Schalter (Toggles) und Regler (Slider) verwendet
+      primary-color: "#273F4F"  # Hauptfarbe für Header, aktive Icons und Akzente
+      accent-color: "#447D9B"   # Akzentfarbe, oft für Schalter (Toggles) und Regler (Slider) verwendet
+      tertiary-color: "#D7D7D7"
       dark-primary-color: "#0288D1" # Eine dunklere Version der Hauptfarbe, wird manchmal für UI-Elemente verwendet
       light-primary-color: "#B3E5FC" # Eine hellere Version der Hauptfarbe
 
