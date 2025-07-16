@@ -43,6 +43,9 @@ Material You:
       secondary-text-color: "#64748B"          # Helleres Grau für Untertitel
       text-primary-color: "#FFFFFF"             # Weißer Text auf primärfarbigem Hintergrund (Header)
 
+      ha-tab-active-text-color: "#1E293B" 
+      
+
       # Zustände & Icons
       state-icon-color: "#475569"              # Neutrales Icon-Grau
       state-icon-active-color: *accent_color    # Aktive Icons leuchten im Akzent-Gelb
