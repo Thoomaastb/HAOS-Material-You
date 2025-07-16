@@ -19,7 +19,7 @@ Material You:
 
   card-mod-root: |
     header {
-      background: var(--header-background-color) !important;
+      background: var(--app-header-background-color) !important;
       backdrop-filter: blur(12px) saturate(180%) !important;
       border-bottom: 1px solid rgba(128, 128, 128, 0.2) !important;
     }
@@ -50,7 +50,7 @@ Material You:
       meine-tertiaere-farbe: *tertiary_color
       divider-color: "#E2E8F0"                  # Sehr helle Trennlinie
 
-      header-background-color: "rgba(248, 250, 252, 0.9)"
+      app-header-background-color: "rgba(248, 250, 252, 0.9)"
       
     # Definition für den dunklen Modus
     dark:
@@ -74,4 +74,4 @@ Material You:
       meine-tertiaere-farbe: *tertiary_color
       divider-color: "#334155"                 # Dunkle, subtile Trennlinie
 
-      header-background-color: "rgba(15, 23, 42, 0.85)"
+      app-header-background-color: "rgba(15, 23, 42, 0.85)"
