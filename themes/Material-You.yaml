@@ -10,12 +10,12 @@ Material You:
 
   ha-card-border-radius: "16px"
   ha-card-border-width: "0"
-  mein-standard-transition: "all 0.25s ease-in-out"
-  card-mod-theme: Material You 
-  card-mod-root: |
-    ha-card {
-      transition: var(--mein-global-transition) !important;
-    }
+  # mein-standard-transition: "all 0.25s ease-in-out"
+  # card-mod-theme: Material You 
+  # card-mod-root: |
+  #   ha-card {
+  #     transition: var(--mein-global-transition) !important;
+  #   }
 
   modes:
     # Definition für den hellen Modus
