@@ -47,7 +47,7 @@ Material You:
       meine-tertiaere-farbe: *tertiary_color
       divider-color: "#E2E8F0"                  # Sehr helle Trennlinie
 
-      app-header-background-color: "rgba(248, 250, 252, 0.9)"
+      header-background-color: "rgba(248, 250, 252, 0.9)"
       
     # Definition für den dunklen Modus
     dark:
