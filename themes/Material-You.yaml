@@ -1,0 +1,61 @@
+# Name deines Themes (wird in der UI angezeigt)
+Material You:
+
+  # =================================================================================
+  # HAUPTFARBEN (Die wichtigsten Variablen)
+  # =================================================================================
+  primary-color: "#03A9F4"  # Hauptfarbe für Header, aktive Icons und Akzente
+  accent-color: "#FF9800"   # Akzentfarbe, oft für Schalter (Toggles) und Regler (Slider) verwendet
+  dark-primary-color: "#0288D1" # Eine dunklere Version der Hauptfarbe, wird manchmal für UI-Elemente verwendet
+  light-primary-color: "#B3E5FC" # Eine hellere Version der Hauptfarbe
+
+  # =================================================================================
+  # TEXTFARBEN
+  # =================================================================================
+  primary-text-color: "#FFFFFF"       # Haupttextfarbe auf farbigen Hintergründen (z.B. im Header)
+  text-primary-color: "#FFFFFF"       # Wird oft synonym mit primary-text-color verwendet
+  secondary-text-color: "#BDBDBD"     # Sekundärtext (z.B. für Untertitel oder inaktive Elemente)
+  disabled-text-color: "#616161"      # Farbe für deaktivierten Text
+
+  # =================================================================================
+  # HINTERGRÜNDE
+  # =================================================================================
+  primary-background-color: "#121212" # Haupt-Hintergrundfarbe der gesamten Seite
+  secondary-background-color: "#212121" # Hintergrund für Pop-ups oder Dialoge
+  card-background-color: "#1C1C1C"      # Hintergrundfarbe für einzelne Karten (Lovelace Cards)
+  
+  # =================================================================================
+  # KARTEN-STYLING (Lovelace UI)
+  # =================================================================================
+  ha-card-border-radius: "12px" # Rundung der Ecken von Karten
+  ha-card-box-shadow: "0px 5px 10px rgba(0, 0, 0, 0.2)" # Schattenwurf von Karten
+  ha-card-border-width: "0"     # Rahmenbreite von Karten (0 für keinen Rahmen)
+
+  # =================================com=================================================
+  # SEITENLEISTE (Sidebar)
+  # =================================================================================
+  sidebar-background-color: "#1C1C1C" # Hintergrund der Seitenleiste
+  sidebar-icon-color: "#BDBDBD"       # Farbe der Icons in der Seitenleiste
+  sidebar-selected-icon-color: "#03A9F4" # Farbe des Icons des aktuell ausgewählten Menüpunkts
+  sidebar-text-color: "#BDBDBD"         # Farbe des Texts in der Seitenleiste
+  sidebar-selected-text-color: "#03A9F4" # Farbe des Texts des aktuell ausgewählten Menüpunkts
+
+  # =================================================================================
+  # ZUSTÄNDE & SCHALTER
+  # =================================================================================
+  state-icon-color: "#BDBDBD"          # Standardfarbe für Zustands-Icons
+  state-icon-active-color: "#FF9800"  # Farbe für aktive Icons (z.B. eine leuchtende Lampe)
+  switch-checked-button-color: "#03A9F4" # Farbe des "Knopfes" eines aktivierten Schalters
+  switch-checked-track-color: "#0288D1"  # Farbe der "Schiene" eines aktivierten Schalters
+  slider-color: "#03A9F4"             # Farbe für Slider (Helligkeit, Lautstärke)
+  
+  # =================================================================================
+  # WEITERE NÜTZLICHE VARIABLEN
+  # =================================================================================
+  divider-color: "rgba(255, 255, 255, 0.12)" # Farbe von Trennlinien
+  label-badge-background-color: "#212121"   # Hintergrund von Badges (die runden Icons oben)
+  label-badge-text-color: "#FFFFFF"         # Textfarbe von Badges
+  
+  # Schriftarten (optional, erfordert das Laden der Schriftart, z.B. über Google Fonts)
+  # paper-font-family: "'Roboto', sans-serif"
+  # ha-font-family: "'Open Sans', sans-serif"
