@@ -21,8 +21,8 @@ Material You:
       color: var(--primary-text-color) !important;
     }
 
-    ha-drawer {
-    background: var(--header-background-color) !important;
+    ha-sidebar {
+      background: var(--header-background-color) !important;
     }
 
     @media screen and (max-width: 800px) {
