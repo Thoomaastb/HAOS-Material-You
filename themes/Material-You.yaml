@@ -25,6 +25,7 @@ Material You:
       background: var(--app-header-background-color) !important;
       backdrop-filter: blur(12px) saturate(180%) !important;
       border-bottom: 1px solid rgba(128, 128, 128, 0.2) !important;
+      color: var(--primary-text-color) !important;
     }
     @media screen and (max-width: 800px) {
       ha-card { margin: 15px; }
@@ -44,7 +45,7 @@ Material You:
       text-primary-color: "#FFFFFF"             # Weißer Text auf primärfarbigem Hintergrund (Header)
 
       ha-tab-active-text-color: "#1E293B" 
-      
+
 
       # Zustände & Icons
       state-icon-color: "#475569"              # Neutrales Icon-Grau
