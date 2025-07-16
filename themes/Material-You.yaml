@@ -14,15 +14,17 @@ Material You:
   app-header-backdrop-filter: "blur(12px) saturate(180%)"
 
   card-mod-root: |
-    header {
-      background: var(--app-header-background-color) !important;
-      backdrop-filter: blur(12px) saturate(180%) !important;
-      border-bottom: 1px solid rgba(128, 128, 128, 0.2) !important;
-      color: var(--primary-text-color) !important;
+    app-header, ha-drawer {
+      background: var(--header-background-color) !important;
+      backdrop-filter: blur(14px) saturate(180%) !important;
     }
 
-    ha-sidebar {
-      background: var(--header-background-color) !important;
+    app-header {
+      border-bottom: 1px solid rgba(128, 128, 128, 0.2) !important;
+    }
+
+    app-toolbar, .mdc-top-app-bar {
+      background: none !important;
     }
 
     @media screen and (max-width: 800px) {
@@ -53,7 +55,6 @@ Material You:
       divider-color: "#E2E8F0"                  # Sehr helle Trennlinie
 
       header-background-color: "rgba(248, 250, 252, 0.9)"
-      sidebar-background-color: *primary_background
       
     # Definition für den dunklen Modus
     dark:
@@ -77,5 +78,4 @@ Material You:
       meine-tertiaere-farbe: *tertiary_color
       divider-color: "#334155"                 # Dunkle, subtile Trennlinie
 
-      app-header-background-color: "rgba(15, 23, 42, 0.85)"
-      sidebar-background-color: *primary_background
+      header-background-color: "rgba(15, 23, 42, 0.85)"
