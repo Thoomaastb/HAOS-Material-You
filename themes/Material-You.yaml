@@ -19,7 +19,14 @@ Material You:
   modes:
     # Definition für den hellen Modus
     light:
-    
+      # =================================================================================
+      # HAUPTFARBEN (Die wichtigsten Variablen)
+      # =================================================================================
+      primary-color: "#91C8E4"  # Hauptfarbe für Header, aktive Icons und Akzente
+      #accent-color: "#447D9B"   # Akzentfarbe, oft für Schalter (Toggles) und Regler (Slider) verwendet
+      tertiary-color: "#FFFBDE"
+      dark-primary-color: "#0288D1" # Eine dunklere Version der Hauptfarbe, wird manchmal für UI-Elemente verwendet
+      light-primary-color: "#B3E5FC" # Eine hellere Version der Hauptfarbe
       
     # Definition für den dunklen Modus
     dark:
@@ -27,7 +34,7 @@ Material You:
       # HAUPTFARBEN (Die wichtigsten Variablen)
       # =================================================================================
       primary-color: "#273F4F"  # Hauptfarbe für Header, aktive Icons und Akzente
-      accent-color: "#447D9B"   # Akzentfarbe, oft für Schalter (Toggles) und Regler (Slider) verwendet
+      #accent-color: "#447D9B"   # Akzentfarbe, oft für Schalter (Toggles) und Regler (Slider) verwendet
       tertiary-color: "#D7D7D7"
       dark-primary-color: "#0288D1" # Eine dunklere Version der Hauptfarbe, wird manchmal für UI-Elemente verwendet
       light-primary-color: "#B3E5FC" # Eine hellere Version der Hauptfarbe
