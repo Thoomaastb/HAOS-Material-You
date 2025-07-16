@@ -17,6 +17,14 @@ Material You:
   #     transition: var(--mein-global-transition) !important;
   #   }
 
+  card-mod-root: |
+    # ===================================================================
+    # STILE FÜR MOBILE GERÄTE (max-width: 800px) =====
+    # ===================================================================
+    @media screen and (max-width: 800px) {
+      ha-card { margin: 0 15px; }
+    }
+
   modes:
     # Definition für den hellen Modus
     light:
