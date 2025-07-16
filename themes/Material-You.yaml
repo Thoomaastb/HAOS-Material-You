@@ -4,12 +4,13 @@ Material You:
   # ===================================================================
   # GEMEINSAME VARIABLEN (gelten für Hell und Dunkel)
   # ===================================================================
-  ha-card-border-radius: "15px"
+  primary-color: &primary_color "#4F46E5"
+  accent-color: &accent_color "#FBBF24"
+  tertiary-color: &tertiary_color "#22D3EE"
+
+  ha-card-border-radius: "16px"
   ha-card-border-width: "0"
-  accent-color: "#FE7743" # Eine Akzentfarbe, die in beiden Modi gut aussieht
-
-
-  global-transition: "all 0.4s ease-in-out"
+  mein-standard-transition: "all 0.25s ease-in-out"
   card-mod-theme: Material You 
   card-mod-root: |
     ha-card {
@@ -19,73 +20,44 @@ Material You:
   modes:
     # Definition für den hellen Modus
     light:
-      # =================================================================================
-      # HAUPTFARBEN (Die wichtigsten Variablen)
-      # =================================================================================
-      primary-color: "#91C8E4"  # Hauptfarbe für Header, aktive Icons und Akzente
-      #accent-color: "#447D9B"   # Akzentfarbe, oft für Schalter (Toggles) und Regler (Slider) verwendet
-      tertiary-color: "#FFFBDE"
-      dark-primary-color: "#0288D1" # Eine dunklere Version der Hauptfarbe, wird manchmal für UI-Elemente verwendet
-      light-primary-color: "#B3E5FC" # Eine hellere Version der Hauptfarbe
+      # Hintergründe
+      primary-background-color: "#F8FAFC"       # Sehr helles, fast weißes Grau
+      secondary-background-color: "#FFFFFF"     # Reines Weiß für Dialoge
+      card-background-color: "#FFFFFF"          # Reines Weiß für Karten
+
+      # Textfarben
+      primary-text-color: "#1E293B"            # Dunkles Schiefergrau für besten Kontrast
+      secondary-text-color: "#64748B"          # Helleres Grau für Untertitel
+      text-primary-color: "#FFFFFF"             # Weißer Text auf primärfarbigem Hintergrund (Header)
+
+      # Zustände & Icons
+      state-icon-color: "#475569"              # Neutrales Icon-Grau
+      state-icon-active-color: *accent_color    # Aktive Icons leuchten im Akzent-Gelb
+
+      # Verweise auf die Hauptfarben
+      primary-color: *primary_color
+      accent-color: *accent_color
+      meine-tertiaere-farbe: *tertiary_color
+      divider-color: "#E2E8F0"                  # Sehr helle Trennlinie
       
     # Definition für den dunklen Modus
     dark:
-      # =================================================================================
-      # HAUPTFARBEN (Die wichtigsten Variablen)
-      # =================================================================================
-      primary-color: "#273F4F"  # Hauptfarbe für Header, aktive Icons und Akzente
-      #accent-color: "#447D9B"   # Akzentfarbe, oft für Schalter (Toggles) und Regler (Slider) verwendet
-      tertiary-color: "#D7D7D7"
-      dark-primary-color: "#0288D1" # Eine dunklere Version der Hauptfarbe, wird manchmal für UI-Elemente verwendet
-      light-primary-color: "#B3E5FC" # Eine hellere Version der Hauptfarbe
+      # Hintergründe
+      primary-background-color: "#0F172A"       # Sehr dunkles Marineblau (fast schwarz)
+      secondary-background-color: "#1E293B"     # Dunkles Schiefergrau für Dialoge
+      card-background-color: "#1E293B"          # Dunkles Schiefergrau für Karten
 
-      # =================================================================================
-      # TEXTFARBEN
-      # =================================================================================
-      primary-text-color: "#FFFFFF"       # Haupttextfarbe auf farbigen Hintergründen (z.B. im Header)
-      text-primary-color: "#FFFFFF"       # Wird oft synonym mit primary-text-color verwendet
-      secondary-text-color: "#BDBDBD"     # Sekundärtext (z.B. für Untertitel oder inaktive Elemente)
-      disabled-text-color: "#616161"      # Farbe für deaktivierten Text
+      # Textfarben
+      primary-text-color: "#F1F5F9"            # Helles, fast weißes Grau
+      secondary-text-color: "#94A3B8"          # Gedämpftes Grau für Untertitel
+      text-primary-color: "#FFFFFF"             # Weißer Text auf primärfarbigem Hintergrund
 
-      # =================================================================================
-      # HINTERGRÜNDE
-      # =================================================================================
-      primary-background-color: "#121212" # Haupt-Hintergrundfarbe der gesamten Seite
-      secondary-background-color: "#212121" # Hintergrund für Pop-ups oder Dialoge
-      card-background-color: "#1C1C1C"      # Hintergrundfarbe für einzelne Karten (Lovelace Cards)
-      
-      # =================================================================================
-      # KARTEN-STYLING (Lovelace UI)
-      # =================================================================================
-      ha-card-border-radius: "12px" # Rundung der Ecken von Karten
-      ha-card-box-shadow: "0px 5px 10px rgba(0, 0, 0, 0.2)" # Schattenwurf von Karten
-      ha-card-border-width: "0"     # Rahmenbreite von Karten (0 für keinen Rahmen)
+      # Zustände & Icons
+      state-icon-color: "#94A3B8"              # Neutrales Icon-Grau
+      state-icon-active-color: *accent_color    # Aktive Icons leuchten im Akzent-Gelb
 
-      # =================================com=================================================
-      # SEITENLEISTE (Sidebar)
-      # =================================================================================
-      sidebar-background-color: "#1C1C1C" # Hintergrund der Seitenleiste
-      sidebar-icon-color: "#BDBDBD"       # Farbe der Icons in der Seitenleiste
-      sidebar-selected-icon-color: "#03A9F4" # Farbe des Icons des aktuell ausgewählten Menüpunkts
-      sidebar-text-color: "#BDBDBD"         # Farbe des Texts in der Seitenleiste
-      sidebar-selected-text-color: "#03A9F4" # Farbe des Texts des aktuell ausgewählten Menüpunkts
-
-      # =================================================================================
-      # ZUSTÄNDE & SCHALTER
-      # =================================================================================
-      state-icon-color: "#BDBDBD"          # Standardfarbe für Zustands-Icons
-      state-icon-active-color: "#FF9800"  # Farbe für aktive Icons (z.B. eine leuchtende Lampe)
-      switch-checked-button-color: "#03A9F4" # Farbe des "Knopfes" eines aktivierten Schalters
-      switch-checked-track-color: "#0288D1"  # Farbe der "Schiene" eines aktivierten Schalters
-      slider-color: "#03A9F4"             # Farbe für Slider (Helligkeit, Lautstärke)
-      
-      # =================================================================================
-      # WEITERE NÜTZLICHE VARIABLEN
-      # =================================================================================
-      divider-color: "rgba(255, 255, 255, 0.12)" # Farbe von Trennlinien
-      label-badge-background-color: "#212121"   # Hintergrund von Badges (die runden Icons oben)
-      label-badge-text-color: "#FFFFFF"         # Textfarbe von Badges
-      
-      # Schriftarten (optional, erfordert das Laden der Schriftart, z.B. über Google Fonts)
-      # paper-font-family: "'Roboto', sans-serif"
-      # ha-font-family: "'Open Sans', sans-serif"
+      # Verweise auf die Hauptfarben
+      primary-color: *primary_color
+      accent-color: *accent_color
+      meine-tertiaere-farbe: *tertiary_color
+      divider-color: "#334155"                 # Dunkle, subtile Trennlinie
