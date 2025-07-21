@@ -15,6 +15,13 @@ Material You:
   app-header-backdrop-filter: "blur(12px) saturate(180%)"
 
   card-mod-root: |
+    body {
+      overflow: hidden !important;
+    }
+
+    ha-card { border-radius: 13em; }
+    ha-fab { z-index: 10; }
+
     app-header, ha-drawer {
       background: var(--header-background-color) !important;
       backdrop-filter: blur(14px) saturate(180%) !important;
@@ -27,9 +34,6 @@ Material You:
     app-toolbar, .mdc-top-app-bar {
       background: none !important;
     }
-
-    ha-card { border-radius: 13em; }
-    ha-fab { z-index: 10; }
 
     #view {
       max-width: 1250px !important;
