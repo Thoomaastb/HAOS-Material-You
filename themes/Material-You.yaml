@@ -28,6 +28,8 @@ Material You:
       background: none !important;
     }
 
+    ha-card { border-radius: 13em; }
+
     @media screen and (max-width: 800px) {
       ha-card { margin: 15px; }
     }
