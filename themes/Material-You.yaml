@@ -29,6 +29,7 @@ Material You:
     }
 
     ha-card { border-radius: 13em; }
+    ha-fab { z-index: 10; }
 
     #view {
       max-width: 1250px !important;
