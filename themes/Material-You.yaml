@@ -27,7 +27,10 @@ Material You:
     }
 
     ha-card { border-radius: 13em; }
-    ha-fab { z-index: 10; }
+    ha-fab {
+      z-index: 10 !important; 
+      bottom: 95px !important;
+    }
 
     app-header, ha-drawer {
       background: var(--header-background-color) !important;
