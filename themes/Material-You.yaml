@@ -17,6 +17,8 @@ Material You:
   card-mod-root: |
     body {
       overflow: hidden !important;
+      max-width: 1250px !important;
+      margin: 0 auto !important;
     }
 
     ha-card { border-radius: 13em; }
@@ -34,11 +36,7 @@ Material You:
     app-toolbar, .mdc-top-app-bar {
       background: none !important;
     }
-
-    #view {
-      max-width: 1250px !important;
-      margin: 0 auto !important; /* Zentriert den Container horizontal */
-    }
+    
     @media screen and (max-width: 1280px) {
       #view {
         width: 90% !important;
