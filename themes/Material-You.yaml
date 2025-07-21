@@ -21,7 +21,7 @@ Material You:
       margin: 0 auto !important;
     }
 
-    #root {
+    ha-root {
       max-width: 1250px;
       margin: 0 auto;
     }
